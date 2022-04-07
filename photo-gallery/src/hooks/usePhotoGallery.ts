@@ -22,15 +22,6 @@ export interface UserPhoto {
         source: CameraSource.Camera,
         quality: 100,
       });
-      const fileName = new Date().getTime() + '.jpeg';
-        const newPhotos = [
-        {
-            filepath: fileName,
-            webviewPath: photo.webPath,
-        },
-        ...photos,
-        ];
-        setPhotos(newPhotos);
     };
     
   
