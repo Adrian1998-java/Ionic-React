@@ -13,3 +13,4 @@
 
 - "**ionic start {Nombre_de_App} blank --type=react**" para iniciar un nuevo proyecto en la carpeta donde estemos ubicados.
   Entra en el proyecto creado con "**cd {Nombre_de_App}**"
+- Para iniciar tu servidor/proyecto, con el comando "**ionic serve**" desde la carpeta del proyecto.
