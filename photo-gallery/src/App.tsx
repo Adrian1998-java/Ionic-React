@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { images, ellipse, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -35,6 +35,8 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
+
 
 // Call the element loader after the platform has been bootstrapped
 defineCustomElements(window);
@@ -71,6 +73,10 @@ const App: React.FC = () => (
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={square} />
             <IonLabel>Tab 3</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab2" href="/tab2">
+            <IonIcon icon={images} />
+            <IonLabel>Photos</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
