@@ -17,7 +17,11 @@
 - "**ionic build**" para crear una version comprimida del proyecto
 - "**ionic cap add ios**" y "**ionic cap add android**" en la carpeta del proyecto para crear proyectos para sistemas IOS y Android, respectivamente.
 - "**ionic cap open android**" para abrir el proyecto Android nativo en Android Studio
+- "**ionic cap copy**" para copiar todos los cambios de tu projecto por defecto a tus proyectos nativos.
+- Cuando tengas conectado via cable un móvil Android a tu computadora, usa "**ionic cap run android -l --external**" para iniciar tu app en tu dispositivo movil.
 
 ## Notas:
 
 ~~*Revisar la documentacion entre taking and saving photos. Revisar que pasa ahí con la funcion de usePhotoGallety*~~ 
+
+En el apartado *Deploy a live update:* https://ionic.io/docs/appflow/quickstart/deploy
