@@ -1,0 +1,47 @@
+/* .container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.container a {
+  text-decoration: none;
+} */
+
+#grid {
+  position: absolute;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+#grid #row{
+  background-color: transparent;
+  size: 9;
+  opacity: 1;
+}
+
+#grid #row #column{
+  background-color: transparent;
+  opacity: 1;
+  padding: 0%;
+  padding-right: 1%;
+}
+
+#grid #row #column #number{
+  color: white;
+  background-color: transparent;
+}
