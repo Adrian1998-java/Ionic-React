@@ -35,9 +35,9 @@ const Teclado: React.FC<ContainerProps> = () => {
   }
   
   return (
-    <IonGrid fixed id='grid'>
+    <IonGrid class='' id='grid'>
       <IonRow id='row'>
-        <IonCol id='column' size='9'>
+        <IonCol class='col-xs-12' id='column' size='9'>
           <IonInput
           value={value}
           clearInput
@@ -47,52 +47,52 @@ const Teclado: React.FC<ContainerProps> = () => {
         </IonCol>
       </IonRow>
       <IonRow id='row'>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={1} onClick={ () => HandleState('1') }  >1</IonButton>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={1} onClick={ () => HandleState('1') }  >1</IonButton>
         </IonCol>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={2} onClick={ () => HandleState('2') } >2</IonButton>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={2} onClick={ () => HandleState('2') } >2</IonButton>
         </IonCol>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={3} onClick={ () => HandleState('3') } >3</IonButton>
-        </IonCol>
-      </IonRow>
-      <IonRow id='row'>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={4} onClick={ () => HandleState('4') } >4</IonButton>
-        </IonCol>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={5} onClick={ () => HandleState('5') } >5</IonButton>
-        </IonCol>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={6} onClick={ () => HandleState('6') } >6</IonButton>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={3} onClick={ () => HandleState('3') } >3</IonButton>
         </IonCol>
       </IonRow>
       <IonRow id='row'>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={7} onClick={ () => HandleState('7') } >7</IonButton>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={4} onClick={ () => HandleState('4') } >4</IonButton>
         </IonCol>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={8} onClick={ () => HandleState('8') } >8</IonButton>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={5} onClick={ () => HandleState('5') } >5</IonButton>
         </IonCol>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={9} onClick={ () => HandleState('9') } >9</IonButton>
-        </IonCol>
-      </IonRow>
-      <IonRow id='row'>
-        <IonCol id='column'size='3'>
-          <IonButton id='number' expand='block' size='large' aria-valuenow={0} onClick={ () => HandleState('1') } >0</IonButton>
-        </IonCol>
-        <IonCol id='column'size='3'>
-          <IonButton id='command'color='tertiary' expand='block' size='large' onClick={ RemoveOne }>C</IonButton>
-        </IonCol>
-        <IonCol id='column'size='3'>
-          <IonButton id='command'color='tertiary' expand='block' size='large' onClick={ ReturnToZero }>CE</IonButton>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={6} onClick={ () => HandleState('6') } >6</IonButton>
         </IonCol>
       </IonRow>
       <IonRow id='row'>
-        <IonCol id='column'size='9'>
-          <IonButton id='continue'expand='block' size='large' >Continuar <IonIcon slot="icon-only" ios={arrowForward}></IonIcon></IonButton>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={7} onClick={ () => HandleState('7') } >7</IonButton>
+        </IonCol>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={8} onClick={ () => HandleState('8') } >8</IonButton>
+        </IonCol>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={9} onClick={ () => HandleState('9') } >9</IonButton>
+        </IonCol>
+      </IonRow>
+      <IonRow id='row'>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={0} onClick={ () => HandleState('1') } >0</IonButton>
+        </IonCol>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolortwo' id='command' expand='block' size='large' onClick={ RemoveOne }>C</IonButton>
+        </IonCol>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolortwo' id='command' expand='block' size='large' onClick={ ReturnToZero }>CE</IonButton>
+        </IonCol>
+      </IonRow>
+      <IonRow id='row'>
+        <IonCol class='col-xs-12' id='column'>
+          <IonButton color='mycolor' id='continue'expand='block' size='large' >Continuar <IonIcon slot="icon-only" ios={arrowForward}></IonIcon></IonButton>
         </IonCol>
       </IonRow>
     </IonGrid>
