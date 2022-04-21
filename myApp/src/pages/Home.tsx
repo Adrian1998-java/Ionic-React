@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/Teclado';
+import Teclado from '../components/Teclado';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+        <Teclado />
       </IonContent>
     </IonPage>
   );
