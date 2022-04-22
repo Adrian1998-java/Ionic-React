@@ -8,7 +8,7 @@ interface ContainerProps { }
 
 const Teclado: React.FC<ContainerProps> = () => {
 
-  const [value, setValue] = useState('0')
+  const [value, setValue] = useState('')
 
   //Return to zero
   const ReturnToZero = () => {
@@ -24,13 +24,7 @@ const Teclado: React.FC<ContainerProps> = () => {
   //Add a number
   const HandleState = (id:string) =>{
     console.log(id);
-    if(value === '0'){
-      ReturnToZero()
-      setValue(c => c + id)
-    }
-    else{
-      setValue(c => c + id)
-    }
+    setValue(c => c + id)
 
   }
   
@@ -40,15 +34,15 @@ const Teclado: React.FC<ContainerProps> = () => {
         <IonCol class='col-xs-12' id='column' size='9'>
           <IonInput
           value={value}
-          clearInput
           readonly
           >
-            Value</IonInput>
+            Value: 
+          </IonInput>
         </IonCol>
       </IonRow>
       <IonRow id='row'>
         <IonCol class='col-xs-12' id='column'>
-          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={1} onClick={ () => HandleState('1') }  >1</IonButton>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={1} onClick={ () => HandleState('1') } >1</IonButton>
         </IonCol>
         <IonCol class='col-xs-12' id='column'>
           <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={2} onClick={ () => HandleState('2') } >2</IonButton>
@@ -81,7 +75,7 @@ const Teclado: React.FC<ContainerProps> = () => {
       </IonRow>
       <IonRow id='row'>
         <IonCol class='col-xs-12' id='column'>
-          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={0} onClick={ () => HandleState('1') } >0</IonButton>
+          <IonButton color='mycolor' id='number' expand='block' size='large' aria-valuenow={0} onClick={ () => HandleState('0') } >0</IonButton>
         </IonCol>
         <IonCol class='col-xs-12' id='column'>
           <IonButton color='mycolortwo' id='command' expand='block' size='large' onClick={ RemoveOne }>C</IonButton>
@@ -92,7 +86,7 @@ const Teclado: React.FC<ContainerProps> = () => {
       </IonRow>
       <IonRow id='row'>
         <IonCol class='col-xs-12' id='column'>
-          <IonButton color='mycolor' id='continue'expand='block' size='large' >Continuar <IonIcon slot="icon-only" ios={arrowForward}></IonIcon></IonButton>
+          <IonButton color='mycolor' id='continue' expand='block' size='large' >Continuar <IonIcon slot="icon-only" ios={arrowForward}></IonIcon></IonButton>
         </IonCol>
       </IonRow>
     </IonGrid>
