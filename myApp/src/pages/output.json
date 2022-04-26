@@ -1,0 +1,44 @@
+{
+	"personas": [
+		{
+			"id": 1,
+			"nombre": "Javier",
+			"apellido": "García",
+			"edad": 20,
+			"direccion": {
+				"calle": "Avenida Venezuela",
+				"municipio": "Santa Úrsula"
+			}
+		},
+		{
+			"id": 2,
+			"nombre": "Pedro",
+			"apellido": "Hernández",
+			"edad": 15,
+			"direccion": {
+				"calle": "Avenida Venezuela",
+				"municipio": "Santa Úrsula"
+			}
+		},
+		{
+			"id": 3,
+			"nombre": "Javier",
+			"apellido": "García",
+			"edad": 20,
+			"direccion": {
+				"calle": "Avenida Venezuela",
+				"municipio": "Santa Úrsula"
+			}
+		},
+		{
+			"id": 4,
+			"nombre": "Pedro",
+			"apellido": "Hernández",
+			"edad": 15,
+			"direccion": {
+				"calle": "Avenida Venezuela",
+				"municipio": "Santa Úrsula"
+			}
+		}
+	]
+}

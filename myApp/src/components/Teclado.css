@@ -10,6 +10,11 @@
 
 }
 
+/*
+PONERLE BORDE TEXTFIELD
+
+PUNTO DECIMAL TRUE O FALSE DISABLE*/
+
 #grid #row #column{
   background-color: transparent;
 }
@@ -18,6 +23,12 @@
   border-radius: 15px;
   border: groove whitesmoke;
 }
+
+#grid #row #column ion-input{
+  border-radius: 15px;
+  border: groove whitesmoke;
+}
+
 #grid #row #column #continue{
   border-radius: 15px;
   border: groove whitesmoke;
@@ -42,6 +53,19 @@ STILL BUTTONS
   background-color: var(--ion-color-mycolortwo);
 }
 
+#grid #row #column #plus {
+  color: white;
+  background-color: var(--ion-color-mycolortwo);
+}
+#grid #row #column #less {
+  color: white;
+  background-color: var(--ion-color-mycolortwo);
+}
+#grid #row #column #comma {
+  color: white;
+  background-color: var(--ion-color-mycolortwo);
+}
+
 /****************************
 HOVER
 ****************************/
@@ -60,6 +84,19 @@ HOVER
   background-color: var(--ion-color-mycolortwohover);
 }
 
+#grid #row #column #plus:hover {
+  color: white;
+  background-color: var(--ion-color-mycolortwohover);
+}
+#grid #row #column #less:hover {
+  color: white;
+  background-color: var(--ion-color-mycolortwohover);
+}
+#grid #row #column #comma:hover {
+  color: white;
+  background-color: var(--ion-color-mycolortwohover);
+}
+
 /****************************
 PRESSED
 ****************************/
@@ -74,6 +111,18 @@ PRESSED
 
 }
 #grid #row #column #continue:active {
+  color: white;
+  background-color: var(--ion-color-mycolortwopressed);
+}
+#grid #row #column #plus:active {
+  color: white;
+  background-color: var(--ion-color-mycolortwopressed);
+}
+#grid #row #column #less:active {
+  color: white;
+  background-color: var(--ion-color-mycolortwopressed);
+}
+#grid #row #column #comma:active {
   color: white;
   background-color: var(--ion-color-mycolortwopressed);
 }
